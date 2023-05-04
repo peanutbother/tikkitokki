@@ -1,0 +1,24 @@
+[package]
+name = "tikkitokki"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.71"
+async-recursion = "1.0.4"
+cached = "0.43.0"
+env_logger = "0.10.0"
+lazy_static = "1.4.0"
+log = { version = "0.4.17", features = ["serde", "std"] }
+poise = "0.5.5"
+regex = "1.8.1"
+reqwest = { version = "0.11.17", features = [
+    "rustls",
+    "tokio-rustls",
+    "serde_json",
+    "json",
+] }
+serde = { version = "1.0.160", features = ["derive"] }
+thiserror = "1.0.40"
+tokio = { version = "1.28.0", features = ["full"] }
+url = "2.3.1"
